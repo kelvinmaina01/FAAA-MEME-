@@ -13,7 +13,7 @@ export class SettingsPanel {
       return;
     }
     const panel = vscode.window.createWebviewPanel(
-      "faaaaaahhh.settings",
+      "faaaaaahhh-official.settings",
       "Faaaaaahhh Settings",
       vscode.ViewColumn.One,
       { enableScripts: true, retainContextWhenHidden: true }
@@ -28,7 +28,7 @@ export class SettingsPanel {
 
     this._panel.webview.onDidReceiveMessage(
       async (message) => {
-        const cfg = vscode.workspace.getConfiguration("faaaaaahhh");
+        const cfg = vscode.workspace.getConfiguration("faaaaaahhh-official");
         switch (message.command) {
           case "updateEnabled":
             await cfg.update("enabled", message.value, vscode.ConfigurationTarget.Global);
@@ -105,7 +105,7 @@ export class SettingsPanel {
   }
 
   private _getHtml(): string {
-    const cfg = vscode.workspace.getConfiguration("faaaaaahhh");
+    const cfg = vscode.workspace.getConfiguration("faaaaaahhh-official");
     const volume = Math.min(100, Math.max(0, cfg.get<number>("volume", 100)));
     const cooldown = cfg.get<number>("cooldownMs", 0);
     const enabled = cfg.get<boolean>("enabled", true);

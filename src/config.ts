@@ -42,7 +42,7 @@ export interface FaaaaahhhConfig {
 }
 
 export function getConfig(): FaaaaahhhConfig {
-  const cfg = vscode.workspace.getConfiguration("faaaaaahhh");
+  const cfg = vscode.workspace.getConfiguration("faaaaaahhh-official");
   return {
     enabled: cfg.get<boolean>("enabled", true),
     warningsEnabled: cfg.get<boolean>("warningsEnabled", true),

@@ -47,7 +47,7 @@ export function activate(context: vscode.ExtensionContext): void {
     vscode.StatusBarAlignment.Right,
     100
   );
-  statusBarItem.command = "faaaaaahhh.toggle";
+  statusBarItem.command = "faaaaaahhh-official.toggle";
   updateStatusBar();
   statusBarItem.show();
   context.subscriptions.push(statusBarItem);
@@ -58,8 +58,8 @@ export function activate(context: vscode.ExtensionContext): void {
 
   // --- Commands ---
   context.subscriptions.push(
-    vscode.commands.registerCommand("faaaaaahhh.toggle", async () => {
-      const config = vscode.workspace.getConfiguration("faaaaaahhh");
+    vscode.commands.registerCommand("faaaaaahhh-official.toggle", async () => {
+      const config = vscode.workspace.getConfiguration("faaaaaahhh-official");
       const current = config.get<boolean>("enabled", true);
       await config.update("enabled", !current, vscode.ConfigurationTarget.Global);
       updateStatusBar();
@@ -70,34 +70,34 @@ export function activate(context: vscode.ExtensionContext): void {
   );
 
   context.subscriptions.push(
-    vscode.commands.registerCommand("faaaaaahhh.testSound", () => {
+    vscode.commands.registerCommand("faaaaaahhh-official.testSound", () => {
       outputChannel.appendLine("Test error sound triggered!");
       playFaaah(context);
     })
   );
 
   context.subscriptions.push(
-    vscode.commands.registerCommand("faaaaaahhh.testWarningSound", () => {
+    vscode.commands.registerCommand("faaaaaahhh-official.testWarningSound", () => {
       outputChannel.appendLine("Test warning sound triggered!");
       playAa(context);
     })
   );
 
   context.subscriptions.push(
-    vscode.commands.registerCommand("faaaaaahhh.testVictorySound", () => {
+    vscode.commands.registerCommand("faaaaaahhh-official.testVictorySound", () => {
       outputChannel.appendLine("Test victory sound triggered!");
       playVictory(context);
     })
   );
 
   context.subscriptions.push(
-    vscode.commands.registerCommand("faaaaaahhh.openSettings", () => {
+    vscode.commands.registerCommand("faaaaaahhh-official.openSettings", () => {
       SettingsPanel.createOrShow(context);
     })
   );
 
   context.subscriptions.push(
-    vscode.commands.registerCommand("faaaaaahhh.switchSoundPack", async () => {
+    vscode.commands.registerCommand("faaaaaahhh-official.switchSoundPack", async () => {
       const current = getConfig().soundPack;
       const picked = await vscode.window.showQuickPick(
         [
@@ -120,7 +120,7 @@ export function activate(context: vscode.ExtensionContext): void {
         { placeHolder: "Choose a sound pack" }
       );
       if (picked) {
-        await vscode.workspace.getConfiguration("faaaaaahhh")
+        await vscode.workspace.getConfiguration("faaaaaahhh-official")
           .update("soundPack", picked.value, vscode.ConfigurationTarget.Global);
         vscode.window.showInformationMessage(`Sound pack switched to: ${picked.label}`);
       }
@@ -136,7 +136,7 @@ export function activate(context: vscode.ExtensionContext): void {
   // Update status bar when config changes
   context.subscriptions.push(
     vscode.workspace.onDidChangeConfiguration((e) => {
-      if (e.affectsConfiguration("faaaaaahhh")) {
+      if (e.affectsConfiguration("faaaaaahhh-official")) {
         updateStatusBar();
       }
     })
