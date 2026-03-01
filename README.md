@@ -25,9 +25,19 @@
 
 ---
 
+## ⭐ Love the Chaos? Star the Repo!
+
+If Faaaaaahhh brings a smile to your face (or a scream to your room), please consider **starring the repository** on GitHub! It helps more developers discover the joy of auditory suffering.
+
+[**Star this Repository**](https://github.com/kelvinmaina01/FAAA-MEME-)
+
+---
+
 ## 🎵 Auditory Feedback for Diagnostic Chaos
 
 **Faaaaaahhh** is a Visual Studio Code extension that turns developer suffering into high-fidelity entertainment. Every time an error appears in your editor, it plays the iconic **FAAAH** meme sound. Warnings get a gentler, slightly less judgmental **AA**.
+
+[**Learn how it works (Architecture and Logic)**](ARCHITECTURE.md)
 
 ### ✨ Key Features
 
@@ -106,6 +116,8 @@ code --install-extension faaaaaahhh-0.3.7.vsix
   <a href="https://github.com/kelvinmaina01/FAAA-MEME-">
     <img src="https://img.shields.io/badge/Star_this_repo-FFD166?style=for-the-badge&logo=github&logoColor=white" alt="Star this repository"/>
   </a>
+  <br>
+  <sub>Your stars keep the memes alive! ⭐</sub>
 </p>
 
 

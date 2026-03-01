@@ -90,11 +90,18 @@ While the Settings Panel is recommended, you can also configure everything in `s
 code --install-extension faaaaaahhh-0.3.7.vsix
 ```
 
+## Why it Works
+
+The extension monitors your environment across multiple channels (Diagnostics, Terminal, Debug, Tasks). It uses a sophisticated **Tier System** to match the sound intensity to the severity of your errors.
+
+[**Read the full Architecture & Logic documentation**](https://github.com/kelvinmaina01/FAAA-MEME-/blob/main/ARCHITECTURE.md)
+
 ---
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/kelvinmaina01/FAAA-MEME-/main/assets/icon.png" width="64" height="64"/><br/>
   <sub>Built by <a href="https://github.com/kelvinmaina01">kelvinmaina01</a></sub><br/>
+  <sub>⭐ **Love the memes? [Star us on GitHub!](https://github.com/kelvinmaina01/FAAA-MEME-)** ⭐</sub><br/>
   <a href="LICENSE">MIT License</a>
 </p>
 
