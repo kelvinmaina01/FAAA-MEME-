@@ -13,7 +13,7 @@
     <img src="https://img.shields.io/github/stars/kelvinmaina01/FAAA-MEME-?style=for-the-badge&color=FFDD00" alt="GitHub stars"/>
   </a>
   <a href="https://ko-fi.com/kelvinmaina01">
-    <img src="https://img.shields.io/badge/Support_this_project-FF5E5B?style=for-the-badge&logo=kofi&logoColor=white" alt="Support this project"/>
+    <img src="https://img.shields.io/badge/Support_this_repository-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Support this repository"/>
   </a>
 </p>
 
@@ -100,7 +100,7 @@ code --install-extension faaaaaahhh-0.3.7.vsix
   <sub>If this extension makes your coding less painful, consider:</sub>
   <br>
   <a href="https://ko-fi.com/kelvinmaina01">
-    <img src="https://img.shields.io/badge/Support_this_project-FF5E5B?style=for-the-badge&logo=kofi&logoColor=white" alt="Support this project"/>
+    <img src="https://img.shields.io/badge/Support_this_repository-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Support this repository"/>
   </a>
   <br>
   <a href="https://github.com/kelvinmaina01/FAAA-MEME-">

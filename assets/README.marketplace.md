@@ -10,7 +10,7 @@
     <img src="https://img.shields.io/visual-studio-marketplace/i/kelvinmaina01.faaaaaahhh?style=for-the-badge&color=2A2E3A&label=Installs" alt="Installs"/>
   </a>
   <a href="https://ko-fi.com/kelvinmaina01">
-    <img src="https://img.shields.io/badge/Support_this_project-FF5E5B?style=for-the-badge&logo=kofi&logoColor=white" alt="Support this project"/>
+    <img src="https://img.shields.io/badge/Support_this_repository-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Support this repository"/>
   </a>
 </p>
 
