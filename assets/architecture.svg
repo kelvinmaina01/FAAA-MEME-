@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap');
+    </style>
+    <marker id="arrow" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="6" markerHeight="4" orient="auto">
+      <path d="M 0 0 L 10 3.5 L 0 7 z" fill="#FF3B3B"/>
+    </marker>
+    <linearGradient id="box-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2A2E3A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E2130;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="640" fill="#0F111A"/>
+  <text x="500" y="40" font-family="Inter, system-ui" font-size="14" font-weight="700" fill="#4B5068" text-anchor="middle" letter-spacing="4">SYSTEM ARCHITECTURE</text>
+
+  <!-- Sources -->
+  <g transform="translate(60, 80)">
+    <rect width="880" height="100" rx="12" fill="#1A1D2E" stroke="#2A2E3A"/>
+    <text x="440" y="-15" font-family="Inter" font-size="11" fill="#4B5068" text-anchor="middle">VS CODE EVENT BUS</text>
+    
+    <g transform="translate(20, 20)">
+      <rect width="200" height="60" rx="8" fill="url(#box-grad)"/>
+      <text x="100" y="35" font-family="Inter" font-size="12" font-weight="600" fill="#F5F5F5" text-anchor="middle">Diagnostics</text>
+      <text x="100" y="50" font-family="Inter" font-size="9" fill="#FF3B3B" text-anchor="middle">Errors &amp; Warnings</text>
+    </g>
+    <g transform="translate(230, 20)">
+      <rect width="200" height="60" rx="8" fill="url(#box-grad)"/>
+      <text x="100" y="35" font-family="Inter" font-size="12" font-weight="600" fill="#F5F5F5" text-anchor="middle">Terminals</text>
+      <text x="100" y="50" font-family="Inter" font-size="9" fill="#FF3B3B" text-anchor="middle">Non-zero Exit Codes</text>
+    </g>
+    <g transform="translate(440, 20)">
+      <rect width="200" height="60" rx="8" fill="url(#box-grad)"/>
+      <text x="100" y="35" font-family="Inter" font-size="12" font-weight="600" fill="#F5F5F5" text-anchor="middle">Task System</text>
+      <text x="100" y="50" font-family="Inter" font-size="9" fill="#FF3B3B" text-anchor="middle">Build Failures</text>
+    </g>
+    <g transform="translate(650, 20)">
+      <rect width="210" height="60" rx="8" fill="url(#box-grad)"/>
+      <text x="105" y="35" font-family="Inter" font-size="12" font-weight="600" fill="#F5F5F5" text-anchor="middle">Debug Sessions</text>
+      <text x="105" y="50" font-family="Inter" font-size="9" fill="#FF3B3B" text-anchor="middle">Crashes</text>
+    </g>
+  </g>
+
+  <!-- Processing Core -->
+  <g transform="translate(60, 240)">
+    <rect width="880" height="140" rx="12" fill="#1A1D2E" stroke="#FF3B3B" stroke-opacity="0.3"/>
+    <text x="440" y="-15" font-family="Inter" font-size="11" fill="#4B5068" text-anchor="middle">EXTENSION RUNTIME</text>
+    
+    <g transform="translate(40, 30)">
+      <rect width="240" height="80" rx="8" fill="#252836"/>
+      <text x="120" y="35" font-family="Inter" font-size="13" font-weight="600" fill="#F5F5F5" text-anchor="middle">Event Batcher</text>
+      <text x="120" y="55" font-family="Inter" font-size="10" fill="#94A3B8" text-anchor="middle">Deltas / Quiet Hours</text>
+      <text x="120" y="70" font-family="Inter" font-size="10" fill="#94A3B8" text-anchor="middle">Cooldown Logic</text>
+    </g>
+    <g transform="translate(320, 30)">
+      <rect width="240" height="80" rx="8" fill="#252836"/>
+      <text x="120" y="35" font-family="Inter" font-size="13" font-weight="600" fill="#F5F5F5" text-anchor="middle">Tier Router</text>
+      <text x="120" y="55" font-family="Inter" font-size="10" fill="#94A3B8" text-anchor="middle">Severity Detection</text>
+      <text x="120" y="70" font-family="Inter" font-size="10" fill="#94A3B8" text-anchor="middle">Pack Selection</text>
+    </g>
+    <g transform="translate(600, 30)">
+      <rect width="240" height="80" rx="8" fill="#252836"/>
+      <text x="120" y="35" font-family="Inter" font-size="13" font-weight="600" fill="#F5F5F5" text-anchor="middle">Config Engine</text>
+      <text x="120" y="55" font-family="Inter" font-size="10" fill="#94A3B8" text-anchor="middle">Settings Panel UI</text>
+      <text x="120" y="70" font-family="Inter" font-size="10" fill="#94A3B8" text-anchor="middle">Custom WAV Resolvers</text>
+    </g>
+  </g>
+
+  <!-- Playback -->
+  <g transform="translate(280, 440)">
+    <rect width="440" height="80" rx="12" fill="#2A2E3A" stroke="#FF3B3B"/>
+    <text x="220" y="45" font-family="Inter" font-size="16" font-weight="700" fill="#F5F5F5" text-anchor="middle">Cross-Platform Sound Player</text>
+    <text x="220" y="65" font-family="Inter" font-size="11" fill="#94A3B8" text-anchor="middle">Spawn independent OS processes (Atomic Overlap)</text>
+  </g>
+
+  <!-- Connectors -->
+  <line x1="500" y1="180" x2="500" y2="230" stroke="#FF3B3B" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="500" y1="380" x2="500" y2="430" stroke="#FF3B3B" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- OS Output Labels -->
+  <g transform="translate(60, 560)">
+    <rect x="0" width="260" height="50" rx="8" fill="#1A1D2E" stroke="#2A2E3A"/>
+    <text x="130" y="30" font-family="Inter" font-size="12" font-weight="600" fill="#94A3B8" text-anchor="middle">Windows: PowerShell Core</text>
+    
+    <rect x="310" width="260" height="50" rx="8" fill="#1A1D2E" stroke="#2A2E3A"/>
+    <text x="440" y="30" font-family="Inter" font-size="12" font-weight="600" fill="#94A3B8" text-anchor="middle">macOS: afplay native</text>
+    
+    <rect x="620" width="260" height="50" rx="8" fill="#1A1D2E" stroke="#2A2E3A"/>
+    <text x="750" y="30" font-family="Inter" font-size="12" font-weight="600" fill="#94A3B8" text-anchor="middle">Linux: PulseAudio / ALSA</text>
+  </g>
+
+  <path d="M400,520 L190,560" stroke="#FF3B3B" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.5"/>
+  <path d="M500,520 L500,560" stroke="#FF3B3B" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.5"/>
+  <path d="M600,520 L810,560" stroke="#FF3B3B" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.5"/>
+</svg>
