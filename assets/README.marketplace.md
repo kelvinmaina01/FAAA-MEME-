@@ -3,11 +3,11 @@
 </p>
 
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=kelvinmaina01.faaaaaahhh">
-    <img src="https://img.shields.io/visual-studio-marketplace/v/kelvinmaina01.faaaaaahhh?style=for-the-badge&color=FF3B3B&label=Marketplace" alt="Marketplace"/>
+  <a href="https://marketplace.visualstudio.com/items?itemName=kelvinmaina.faaaaaahhh">
+    <img src="https://img.shields.io/visual-studio-marketplace/v/kelvinmaina.faaaaaahhh?style=for-the-badge&color=FF3B3B&label=Marketplace" alt="Marketplace"/>
   </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=kelvinmaina01.faaaaaahhh">
-    <img src="https://img.shields.io/visual-studio-marketplace/i/kelvinmaina01.faaaaaahhh?style=for-the-badge&color=2A2E3A&label=Installs" alt="Installs"/>
+  <a href="https://marketplace.visualstudio.com/items?itemName=kelvinmaina.faaaaaahhh">
+    <img src="https://img.shields.io/visual-studio-marketplace/i/kelvinmaina.faaaaaahhh?style=for-the-badge&color=2A2E3A&label=Installs" alt="Installs"/>
   </a>
   <a href="https://ko-fi.com/kelvinmaina01">
     <img src="https://img.shields.io/badge/Support_this_repository-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Support this repository"/>
