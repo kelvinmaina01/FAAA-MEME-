@@ -251,12 +251,9 @@ export function playSound(
   let soundPath: string;
   if (kind === "victory") {
     soundPath = resolveVictorySound(context, config);
-  } else if (kind === "terminal") {
-    soundPath = resolveTerminalSound(context, config);
-  } else if (kind === "error") {
-    soundPath = resolveErrorSound(context, config, delta);
   } else {
-    soundPath = resolveWarningSound(context, config, delta);
+    // All other events (error, warning, terminal) now play the iconic FAAAH sound
+    soundPath = resolveErrorSound(context, config, delta);
   }
 
   if (!fs.existsSync(soundPath)) {
